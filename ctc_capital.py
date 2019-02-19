@@ -314,9 +314,7 @@ def main( dealerName):
     
     if  is_file_expiry( dealerName):
         convert2csv( dealerName, csvFName)
-    if os.path.exists( csvFName    ) : shutil.copy2( csvFName ,    'c://AV_PROM/prices/' + dealerName +'/'+csvFName )
-    if os.path.exists( 'python.log') : shutil.copy2( 'python.log', 'c://AV_PROM/prices/' + dealerName +'/python.log')
-    if os.path.exists( 'python.1'  ) : shutil.copy2( 'python.log', 'c://AV_PROM/prices/' + dealerName +'/python.1'  )
+
 
 
 if __name__ == '__main__':
