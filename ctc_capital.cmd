@@ -1,3 +1,3 @@
 python.exe  ctc_capital.py
 
- pause
+rem pause
