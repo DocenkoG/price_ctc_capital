@@ -143,6 +143,10 @@ def convert2csv( dealerName, csvFName ):
                             shablon = shablon.replace(key, impValues[key])
                     if (outColName == 'закупка') and (brand_koeft != 1) :
                         shablon = str( float(impValues['цена2']) * brand_koeft )
+                    elif outColName == 'подгруппа' :
+                        shablon = shablon[:150]
+                    elif outColName == 'изображение' :
+                        shablon = shablon[:255]
                     recOut[outColName] = shablon
                 csvWriter.writerow(recOut)
 
